@@ -1,7 +1,6 @@
-/** {
-	border: 1px dotted blue;
-}*/
-
+* {
+	margin: 0px;
+}
 body {
 	height: 100%;
 
@@ -27,15 +26,50 @@ p {
 blockquote {
 	font-style: italic;
 	text-indent: 0px;
+	margin: 25px;
 }
 
+.headerOne {
+	position: fixed;
+	height: 30px;
+	margin: 0px;
+	width: 67%;
+	background-color: black;
+	font-family: 'barlow';
+	color: white;
+}
+
+.headerTwo {
+	position: fixed;
+	height: 30px;
+	width: 33%;
+	margin-left: 67%;
+	background-color: #d8d8d8;
+	font-family: 'barlow';
+
+
+}
+.headerOne > p, .headerTwo > p {
+	margin-left: 4px;
+	margin-top: 4px;
+}
+
+
 .intro {
+/*	position: absolute;*/
+	width: 100%;
 	height: 800px;
 	font-family: 'barlow';
 	font-weight: 400;
-	padding-left: 325px;
-	padding-right: 325px;
 	line-height: 2;
+	margin-bottom: 100px;
+
+}
+
+.intro > img {
+	margin: auto;
+	display: flex;
+	align-items:center;
 }
 
 
@@ -87,13 +121,34 @@ blockquote {
 	padding: 8px;
 }
 
-.secondText p, h4 {
+.secondText > p, h4 {
 	width: 70%;
 	margin-left: 12%;
 	float: right;
 	font-family: 'barlow';
 	letter-spacing: 0.8px;
 	line-height: 1.3;
+	text-indent: 20px;
+}
+
+.secondText > blockquote {
+	width: 60%;
+	margin-left: 12%;
+	float: right;
+	font-family: 'barlow';
+	letter-spacing: 0.8px;
+	line-height: 1.3;
+	text-indent: 20px;
+}
+.secondText > p > img {
+	width: 100%;
+}
+
+.secondImage {
+	width: 70%;
+	margin-left: 12%;
+	float: right;
+}
 
 }
 .note {
@@ -110,5 +165,10 @@ blockquote {
 	text-indent: 0px;
 }
 
+@media print {
+	.headerOne, .headerTwo {
+		display: none;
+	}
+}
 
 
