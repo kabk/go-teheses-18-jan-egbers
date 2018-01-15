@@ -1,1 +1,1 @@
-# go-teheses-18-jan-egbers
+# go-theses-18-jan-egbers
